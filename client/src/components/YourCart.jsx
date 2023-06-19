@@ -45,7 +45,7 @@ await axios.get(`http://localhost:4000/Cartitem/${value}`,{token:cookie.get("tok
         <h6 className="card-title"><small>quantity : </small>{data.info.quantity}</h6>
         <p className="card-text">{data.product.description}</p>
         <p className="card-text"><small className="text-body-secondary">{data.info.createdAt}</small></p>
-        <button  className='btn btn-outline-danger my-3 '><Icon.Trash size={28} color='red' onClick={removeFromCart()}/>Remove from cart</button>
+        <button  className='btn btn-outline-danger my-3 ' onClick={()=>removeFromCart()}><Icon.Trash size={28} color='red' />Remove from cart <br/> <small className='float-end'>double click to confirm remove</small></button>
         <button  className='btn btn-outline-success' onClick={()=>BuyNow()}><Icon.Trash size={28} color='green' />Buy now</button>
       </div>
     </div>

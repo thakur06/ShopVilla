@@ -26,8 +26,8 @@ const cookie=new Cookies();
     <div className="card text-center my-2 border-0">
   
   <div className="card-body">
-    <h5 className="card-title">Special title treatment</h5>
-    <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <h5 className="card-title">Your Cart</h5>
+    <p className="card-text">Why do I always choose the shopping cart with the squeaky wheel? ...</p>
    <Icon.Cart4 size={38} color="blue"/>
   </div>
   
